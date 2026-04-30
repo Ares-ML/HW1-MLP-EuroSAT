@@ -99,11 +99,11 @@ python -m scripts.ensemble \
     --out-dir runs/v3c_ensemble_final_eval
 ```
 
-`--data-seed 42` is **required** for honest ensemble evaluation: it forces the same train/val/test split for every seed, so the ensemble inference set is held-out from all three members. Without it, each seed produces its own independent split and the ensemble inference set ends up overlapping with the training data of seeds 43 and 44 — see `report.md` §7.3 for the full diagnostic of an earlier run that hit this trap.
+`--data-seed 42` is **required** for honest ensemble evaluation: it forces the same train/val/test split for every seed, so the ensemble inference set is held-out from all three members. Without it, each seed produces its own independent split and the ensemble inference set ends up overlapping with the training data of seeds 43 and 44 — see `report` §7.3 for the full diagnostic of an earlier run that hit this trap.
 
 ### Outputs
 
-`runs/v3c_ensemble_final_eval/` — the canonical artefact directory referenced by `report.md`:
+`runs/v3c_ensemble_final_eval/` — the canonical artefact directory referenced by `report`:
 
 | File | Course requirement |
 |---|---|
@@ -115,7 +115,7 @@ python -m scripts.ensemble \
 | `error_pairs/errors_*.png` | one PNG per top-K confusion pair (default K=4) |
 | `neuron_class_preferences.png` | each row = one fc1 neuron preferring a class, with W1 template + class samples side by side |
 | `neuron_activation_heatmap.png` | per-class mean activation of class-preferring neurons |
-| `neuron_analysis.json` | numerical preference scores cited in `report.md` §8.2 |
+| `neuron_analysis.json` | numerical preference scores cited in `report` §8.2 |
 
 Each `runs/v3c_seed*/` additionally contains `curves.png` (the **loss + accuracy curves required by the assignment**, course requirement ①) and `history.json` (per-epoch raw numbers).
 
@@ -127,7 +127,7 @@ Each `runs/v3c_seed*/` additionally contains `curves.png` (the **loss + accuracy
 python -m scripts.search --out-dir runs/v3_search
 ```
 
-Default search space (after three rounds of refinement; see `report.md` §5):
+Default search space (after three rounds of refinement; see `report` §5):
 - `lr` ∈ log-uniform[4e-3, 1.5e-2]
 - `weight_decay` ∈ log-uniform[5e-4, 5e-3]
 - `hidden1` ∈ {192, 256, 384}, `hidden2` ∈ {96, 128, 192}
@@ -167,8 +167,8 @@ The gradient checker in `scripts.sanity_check` runs in float64 and reports worst
 
 ## Submission deliverables
 
-- This repository (public on GitHub) — link at the top of `report.md`
-- Trained checkpoints (3 × `best.pkl` + the `runs/v3c_ensemble_final_eval/` directory) — uploaded to Google Drive, link at the top of `report.md`
-- Experiment report (`report.md`, exported to PDF for the LMS)
+- This repository (public on GitHub) — link at the top of `report`
+- Trained checkpoints (3 × `best.pkl` + the `runs/v3c_ensemble_final_eval/` directory) — uploaded to Google Drive, link at the top of `report`
+- Experiment report (`report`, exported to PDF for the LMS)
 
 Last update: 2026-04-30
