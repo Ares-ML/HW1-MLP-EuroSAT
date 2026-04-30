@@ -4,7 +4,7 @@ A from-scratch (NumPy-only) three-layer fully-connected classifier for the EuroS
 
 - **Repository**: <https://github.com/Ares-ML/HW1-MLP-EuroSAT>
 - **Trained checkpoints**: https://pan.baidu.com/s/1-pBVqo4zNioc2-GREOLYjA?pwd=7wzt 
-- **Headline results** (no data-split contamination):
+- **Headline results**:
   - 3-seed ensemble + TTA: **test_acc = 0.7930** (balanced 0.7910, macro-F1 0.7904, Cohen κ 0.7696, top-3 acc 0.9663)
   - Best single model (seed 43) + TTA: **test_acc = 0.7948**
 - All course-required artefacts live under [runs/v3c_ensemble_final_eval/](runs/v3c_ensemble_final_eval/).
@@ -35,8 +35,6 @@ DL/
 │   └── ensemble.py               # multi-seed logit averaging evaluation
 ├── runs/                       # one output dir per experiment (see .gitignore for what's tracked)
 ├── cache/                      # decoded uint8 dataset cache (~316 MB, git-ignored)
-├── report.md                   # the experiment report (pdf for LMS submission)
-├── SUBMISSION_CHECKLIST.md
 ├── requirements.txt
 ├── .gitignore
 └── README.md                   # this file
