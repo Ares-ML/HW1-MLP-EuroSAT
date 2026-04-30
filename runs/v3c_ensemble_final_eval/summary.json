@@ -1,0 +1,55 @@
+{
+  "checkpoints": [
+    "runs/v3c_seed42/best.pkl",
+    "runs/v3c_seed43/best.pkl",
+    "runs/v3c_seed44/best.pkl"
+  ],
+  "num_members": 3,
+  "tta": true,
+  "test_acc": 0.792962962962963,
+  "balanced_acc": 0.791,
+  "macro_f1": 0.7903871232482512,
+  "cohen_kappa": 0.7696112103310895,
+  "top3_acc": 0.9662962962962963,
+  "per_member": [
+    {
+      "checkpoint": "runs/v3c_seed42/best.pkl",
+      "test_acc": 0.7874074074074074
+    },
+    {
+      "checkpoint": "runs/v3c_seed43/best.pkl",
+      "test_acc": 0.7948148148148149
+    },
+    {
+      "checkpoint": "runs/v3c_seed44/best.pkl",
+      "test_acc": 0.7862962962962963
+    }
+  ],
+  "top_confusions": [
+    {
+      "true": "River",
+      "pred": "Highway",
+      "n": 34
+    },
+    {
+      "true": "SeaLake",
+      "pred": "Forest",
+      "n": 27
+    },
+    {
+      "true": "HerbaceousVegetation",
+      "pred": "Residential",
+      "n": 26
+    },
+    {
+      "true": "HerbaceousVegetation",
+      "pred": "PermanentCrop",
+      "n": 25
+    },
+    {
+      "true": "Highway",
+      "pred": "PermanentCrop",
+      "n": 23
+    }
+  ]
+}
