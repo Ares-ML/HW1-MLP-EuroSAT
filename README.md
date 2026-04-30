@@ -168,7 +168,7 @@ The gradient checker in `scripts.sanity_check` runs in float64 and reports worst
 ## Submission deliverables
 
 - This repository (public on GitHub) — link at the top of `report`
-- Trained checkpoints (3 × `best.pkl` + the `runs/v3c_ensemble_final_eval/` directory) — uploaded to Google Drive, link at the top of `report`
+- Trained checkpoints (3 × `best.pkl` + the `runs/v3c_ensemble_final_eval/` directory) — uploaded to Baidu Netdisk, link at the top of `report`
 - Experiment report (`report`, exported to PDF for the LMS)
 
 Last update: 2026-04-30
