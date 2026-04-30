@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Dataset and big artifacts (do NOT push to GitHub)
+EuroSAT_RGB/
+cache/
+*.npz
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Logs (key numbers already captured in summary.json / history.json)
+logs/
+*.log
+
+# Training run directories — ignore by default, allowlist the few referenced
+# by the report (v3c is the canonical clean evaluation; v3_search holds the
+# search artefacts cited in §5).
+runs/*
+!runs/v3c_ensemble_final_eval/
+!runs/v3c_seed42/
+!runs/v3c_seed43/
+!runs/v3c_seed44/
+!runs/v3_search/
+
+# Trained weights are distributed via Google Drive, NOT GitHub
+runs/**/best.pkl
+
+# Report PDF — keep the markdown source, not the binary
+report.pdf
