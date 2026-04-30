@@ -1,0 +1,161 @@
+{
+  "num_neurons": 384,
+  "num_classes": 10,
+  "class_names": [
+    "AnnualCrop",
+    "Forest",
+    "HerbaceousVegetation",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "PermanentCrop",
+    "Residential",
+    "River",
+    "SeaLake"
+  ],
+  "fraction_dead_neurons": 0.0,
+  "preference_strength_quantiles": {
+    "p50": 1.5245829820632935,
+    "p75": 1.9494595527648926,
+    "p90": 2.4037703514099116,
+    "p99": 3.799522194862366
+  },
+  "top_neurons_per_class": {
+    "AnnualCrop": [
+      {
+        "neuron_id": 87,
+        "preference_strength": 2.483018636703491,
+        "best_activation": 4.942508697509766,
+        "class_means": {
+          "AnnualCrop": 4.942508697509766,
+          "Forest": 0.22414052486419678,
+          "HerbaceousVegetation": 2.664273738861084,
+          "Highway": 1.384861946105957,
+          "Industrial": 0.1471588909626007,
+          "Pasture": 0.5763580799102783,
+          "PermanentCrop": 4.263988494873047,
+          "Residential": 0.7355055809020996,
+          "River": 0.2778666913509369,
+          "SeaLake": 0.06291016191244125
+        }
+      }
+    ],
+    "Forest": [
+      {
+        "neuron_id": 178,
+        "preference_strength": 2.2778308391571045,
+        "best_activation": 3.655275821685791,
+        "class_means": {
+          "AnnualCrop": 0.41854438185691833,
+          "Forest": 3.655275821685791,
+          "HerbaceousVegetation": 1.2607253789901733,
+          "Highway": 0.9351496696472168,
+          "Industrial": 0.03879408910870552,
+          "Pasture": 1.551140546798706,
+          "PermanentCrop": 0.4787656366825104,
+          "Residential": 0.3043639361858368,
+          "River": 1.0244941711425781,
+          "SeaLake": 2.3170700073242188
+        }
+      }
+    ],
+    "HerbaceousVegetation": [],
+    "Highway": [],
+    "Industrial": [
+      {
+        "neuron_id": 383,
+        "preference_strength": 3.930703639984131,
+        "best_activation": 3.642411947250366,
+        "class_means": {
+          "AnnualCrop": 1.0670088529586792,
+          "Forest": 0.02166087180376053,
+          "HerbaceousVegetation": 0.5242363214492798,
+          "Highway": 0.5976218581199646,
+          "Industrial": 3.642411947250366,
+          "Pasture": 0.2508157789707184,
+          "PermanentCrop": 0.6063193082809448,
+          "Residential": 0.8308556079864502,
+          "River": 0.3922194838523865,
+          "SeaLake": 0.09396804124116898
+        }
+      }
+    ],
+    "Pasture": [
+      {
+        "neuron_id": 179,
+        "preference_strength": 2.023547649383545,
+        "best_activation": 3.933310031890869,
+        "class_means": {
+          "AnnualCrop": 0.6261703372001648,
+          "Forest": 2.5174710750579834,
+          "HerbaceousVegetation": 0.19034001231193542,
+          "Highway": 1.0410114526748657,
+          "Industrial": 0.2420286238193512,
+          "Pasture": 3.933310031890869,
+          "PermanentCrop": 0.30133798718452454,
+          "Residential": 0.2153763622045517,
+          "River": 2.2962422370910645,
+          "SeaLake": 2.578723907470703
+        }
+      }
+    ],
+    "PermanentCrop": [
+      {
+        "neuron_id": 210,
+        "preference_strength": 0.27621370553970337,
+        "best_activation": 0.499746710062027,
+        "class_means": {
+          "AnnualCrop": 0.41395437717437744,
+          "Forest": 0.37769341468811035,
+          "HerbaceousVegetation": 0.3366336524486542,
+          "Highway": 0.41384944319725037,
+          "Industrial": 0.4520263969898224,
+          "Pasture": 0.4808027744293213,
+          "PermanentCrop": 0.499746710062027,
+          "Residential": 0.43019363284111023,
+          "River": 0.3705767095088959,
+          "SeaLake": 0.22700397670269012
+        }
+      }
+    ],
+    "Residential": [],
+    "River": [
+      {
+        "neuron_id": 361,
+        "preference_strength": 1.254755973815918,
+        "best_activation": 1.5636945962905884,
+        "class_means": {
+          "AnnualCrop": 0.7252049446105957,
+          "Forest": 1.0898491144180298,
+          "HerbaceousVegetation": 0.36764001846313477,
+          "Highway": 0.7398262619972229,
+          "Industrial": 0.33636409044265747,
+          "Pasture": 0.9030011296272278,
+          "PermanentCrop": 0.32089686393737793,
+          "Residential": 0.2156555950641632,
+          "River": 1.5636945962905884,
+          "SeaLake": 1.0816378593444824
+        }
+      }
+    ],
+    "SeaLake": [
+      {
+        "neuron_id": 75,
+        "preference_strength": 2.106628656387329,
+        "best_activation": 2.29160475730896,
+        "class_means": {
+          "AnnualCrop": 0.14708958566188812,
+          "Forest": 2.091994285583496,
+          "HerbaceousVegetation": 0.7372722625732422,
+          "Highway": 0.7051267027854919,
+          "Industrial": 0.3730202913284302,
+          "Pasture": 0.16689130663871765,
+          "PermanentCrop": 0.15249057114124298,
+          "Residential": 0.4627855122089386,
+          "River": 0.7848187685012817,
+          "SeaLake": 2.29160475730896
+        }
+      }
+    ]
+  }
+}
